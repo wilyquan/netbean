@@ -1,0 +1,200 @@
+body,html,div,span,p,h1,h2,h3,h4,h5,h6,h8,input,button,img,i,em,strong,ul,li,ol,li,dl,dt,dd,a{
+	padding:0; margin:0; border:0; outline:none; font-style:normal; font-weight:normal; list-style:none;border:none;
+}
+body{
+	color:#333; 
+	font-size:14px; 
+	font-family:"Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","\9ED1\4F53",Arial,sans-serif;
+	background: #e7e8eb;
+	line-height: 1.6;
+	min-width: 1200px;
+}
+body.login{
+	background: #fff;
+}
+a{ 
+	text-decoration:none;
+	color:#459ae9;
+}
+a:hover{
+	text-decoration:none;
+	color:#459ae9;
+}
+img{
+
+}
+table{
+	width:100%;
+	border-collapse:collapse;
+	border-spacing:0;
+	table-layout:fixed;
+	empty-cells:hide;
+	word-break:break-all;
+	word-wrap:break-word;
+}
+textarea{
+	resize:none;
+	overflow-y:auto;
+	font-size:100%;
+} 
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
+	color:#a3a3a3;
+}
+input:-moz-placeholder, textarea:-moz-placeholder{
+	color:#a3a3a3;
+}
+input::-moz-placeholder, textarea::-moz-placeholder{
+	color:#a3a3a3;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder{
+	color:#a3a3a3;
+}
+
+/*.form-control{line-height: 1.3; font-size: 14px;}*/
+
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.b{
+	font-weight: bold
+}
+.hot{
+	color:#fa2701!important
+}
+.red{
+	color:#e15f63!important;
+}
+.green{
+	color:#44b549!important;
+}
+.yellow{
+	color:#ffb103!important;
+}
+.gray{
+	color:#8d8d8d!important;
+}
+.black{
+	color:#222222!important;
+}
+
+.noml{
+	margin-left: 0!important;
+}
+.nomr{
+	margin-right: 0!important;
+}
+.clearfix:after{
+	content:""; 
+	display:block; 
+	visibility:hidden; 
+	height:0; 
+	clear:both;
+}
+.clearfix{
+	zoom:1;
+}
+.clear{
+	clear:both;
+}
+.nobg{
+	background: none!important;
+}
+.hide{display:none!important;}
+.red{color:#ff0000;}
+
+.fs12{
+	font-size:12px;
+}
+.tl{
+	text-align:left!important;
+	}
+.tc{
+	text-align:center!important;
+	}
+.tr{
+	text-align:right!important;
+}
+.fl{
+	float:left!important;
+	}
+.fr{
+	float:right!important;
+}
+.vt{
+	vertical-align:top;
+	}
+.vm{
+	vertical-align:middle;
+	}
+.vb{
+	vertical-align:bottom;
+}
+.vs{
+	color:#e7e7eb;
+	margin:0 10px;
+	font-family:arial;
+} /* 垂直分隔线 */
+.hr{
+	height:1px;
+	margin:30px 0;
+	background:#e7e7eb;
+	overflow:hidden;
+} /* 水平分隔线 */
+
+.mb10{
+	margin-bottom:10px!important;
+}
+.mb20{
+	margin-bottom:20px!important;
+}
+.mb30{
+	margin-bottom:30px!important;
+}
+
+.np{
+	padding:0!important;
+}  /* 重置内边距 */
+.nm{
+	margin:0!important;
+}   /* 重置外边距 */
+
+.b-dib{display:inline-block;*display:inline;*zoom:1;vertical-align:middle;}  /* 一般用于把块状元素元素(如：div等)重置成行内元素) */
+
+.gap{margin:0 4px;}      /* 左右间隔 */
+.gapl{margin-left:4px;}  /* 左边间隔 */
+.gapr{margin-right:4px;} /* 右边间隔 */
+.gap-wide{margin:0 14px;}      /* 左右大间隔 */
+.gapl-wide{margin-left:14px;}  /* 左边大间隔 */
+.gapr-wide{margin-right:14px;} /* 右边大间隔 */
+
+/*dd .nuxt-link-active.nuxt-link-exact-active{background:#44b549;color:#fff;}*/
+/*dd a.nuxt-link-active.nuxt-link-exact-active, dd .nuxt-link-active.nuxt-link-exact-active a:hover{background:#44b549;color:#fff;}*/
+dd a.cc-active-link.nuxt-link-exact-active, dd a:hover.cc-active-link.nuxt-link-exact-active {background:#44b549;color:#fff;}
+/*dd a.cc-active-link, dd .cc-active-link {background:#44b549;color:#fff;}*/
+/*dd .nuxt-link-active.nuxt-link-exact-active a, dd .nuxt-link-active.nuxt-link-exact-active a:hover{color:#ffffff;background:#44b549;color:#fff;}*/
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+html,
+body {
+  height: 100%;
+  background-color: #333;
+  background:url("../asserts/img/bg.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+.item{
+	margin-left: 30px;
+}
+
+.item-logo{
+	width: 40%;
+	height: 40%;
+	margin-top: 40px;
+	position: relative;
+}
+
+
+.item-title{
+	width: 70%;
+	height: auto;
+	margin-top: 10%;
+}
+
+.item-phone{
+	width: 51%;
+	margin-top: 20%;
+}
+
+.item-footer{
+	width: 63%;
+}

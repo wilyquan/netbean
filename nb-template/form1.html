@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+
+		<link href="css/icon.css" rel="stylesheet" />
+		<link href="css/global.css" rel="stylesheet" />
+		<link href="css/main.css" rel="stylesheet" />
+		<link href="css/form-validation.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="topbar">
+			<div class="d-flex justify-content-center">
+				<div class="topbar-content topbar-items">
+					<div class="d-flex flex-row justify-content-end nav cc-nav">
+						<a class="nav-link flaticon-piggy-bank" href="#">你好，退出</a>
+						<div class="nav-item">
+							<a class="nav-link" href="#"><img src="img/common/ico_docu.png" class="nav-item-icon" />开发文档</a>
+						</div>
+						<div class="nav-item">
+							<a class="nav-link" href="#"><img src="img/common/ico_help.png" class="nav-item-icon" />帮助中心</a>
+						</div>
+						<div class="nav-item">
+							<a class="nav-link active" href="#"><img src="img/common/ico_new.png" class="nav-item-icon" />消息中心</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header>
+			<div class="d-flex justify-content-center">
+				<div class="header-content">
+					<div class="d-flex flex-row justify-content-start nav">
+						<a href="javascript:;" class="header-logo"><img src="img/common/logo.png"></img>
+						</a>
+						<a href="javascript:;" class="nav-link header-nav-item active">我的面板</a>
+						<a href="javascript:;" class="nav-link header-nav-item">系统设置</a>
+						<a href="javascript:;" class="nav-link header-nav-item">客户管理</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="d-flex justify-content-center">
+			<!-- 内容 -->
+			<div class="cc-container wrap">
+				<div class="d-flex justify-content-center">
+					<!-- 侧边栏 -->
+					<div class="cc-sidebar">
+						<div class="cc-menu">
+							<!-- 交互说明
+                         1.给标签dl添加样式"open",显示下拉列表
+                         2.给标签dt或dd添加样式"on",显示选中状态
+                    -->
+							<dl>
+								<dt><i class="type-ico "></i>个人设置</dt>
+
+								<dd class="selected">
+									<a href="javascript:;">个人信息</a>
+								</dd>
+
+								<dd class="">
+									<a href="javascript:;">修改密码</a>
+								</dd>
+
+								<!--<dd class="">
+									<a href="javascript:;">待审核任务</a>
+								</dd>
+
+								<dd class="">
+									<a href="javascript:;">已审核任务</a>
+								</dd>
+
+								<dd class="">
+									<a href="javascript:;">我提交的审核任务</a>
+								</dd>-->
+							</dl>
+							<dl>
+								<dt><i class="type-ico ico-setup"></i>系统设置</dt>
+
+								<dd class="">
+									<a href="#">菜单信息</a>
+								</dd>
+
+								<dd class="">
+									<a href="#">角色信息</a>
+								</dd>
+
+								<dd class="">
+									<a href="#">字典信息</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt><i class="type-ico ico-setup"></i>系统用户</dt>
+
+								<dd class="">
+									<a href="#">用户管理</a>
+								</dd>
+
+								<dd class="">
+									<a href="#">组织管理</a>
+								</dd>
+
+								<dd class="">
+									<a href="#">区域管理</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt class=""><a href="/index.php/core/apply_progress"><i class="type-ico ico-apply"></i>支付申请</a></dt>
+							</dl>
+						</div>
+					</div>
+					<!-- 侧边栏 ]] -->
+
+					<!-- 主区域 [[ -->
+					<div class="cc-content">
+						<div class="cc-content-hd">
+							<h2 class="cc-content-title"><p>API安全</p></h2>
+							<!--具体的内容页面-->
+							<div class="cc-content-main">
+								<div class="col-md-12 order-md-1">
+									<h6 class="mb-3">基本信息</h6>
+									<form class="needs-validation" novalidate>
+										<div class="form-group row">
+											<label for="staticEmail" class="col-sm-2 col-form-label col-form-label-sm">用户名</label>
+											<div class="col-sm-8">
+												<input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="inputPassword" class="col-sm-2 col-form-label col-form-label-sm">密码</label>
+											<div class="col-sm-6">
+												<input type="password" class="form-control form-control-sm" id="inputPassword" placeholder="Password" required/>
+												<div class="invalid-feedback">
+													Valid first name is required.
+												</div>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-sm-2 col-form-label col-form-label-sm">状态</label>
+											<div class="col-sm-10">
+												<div class="custom-control custom-radio custom-control-inline">
+													<input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+													<label class="custom-control-label" for="customRadioInline1">正常</label>
+												</div>
+												<div class="custom-control custom-radio custom-control-inline">
+													<input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+													<label class="custom-control-label" for="customRadioInline2">停用</label>
+												</div>
+												<div class="invalid-feedback">
+													提交时间不能为空。
+												</div>
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label class="col-sm-2 col-form-label col-form-label-sm">垂直显示名称</label>
+											<div class="col-sm-10">
+												<div class="radio">
+													  <label>
+													    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+													    正常
+													  </label>
+													</div>
+													<div class="radio">
+													  <label>
+													    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+													    停用
+													  </label>
+													</div>
+													<div class="radio disabled">
+													  <label>
+													    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+													    冻结
+													  </label>
+												</div>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-md-6 mb-3">
+												<label for="firstName" class="col-form-label-sm">First name</label>
+												<input type="text" class="form-control input-normal" id="firstName" placeholder="" value="" required>
+												<div class="invalid-feedback">
+													Valid first name is required.
+												</div>
+											</div>
+											<div class="col-md-6 mb-3">
+												<label for="lastName">Last name</label>
+												<input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+												<div class="invalid-feedback">
+													Valid last name is required.
+												</div>
+											</div>
+										</div>
+
+										<div class="mb-3">
+											<label for="username">Username</label>
+											<div class="input-group">
+												<div class="input-group-prepend">
+													<span class="input-group-text">@</span>
+												</div>
+												<input type="text" class="form-control" id="username" placeholder="Username" required>
+												<div class="invalid-feedback" style="width: 100%;">
+													Your username is required.
+												</div>
+											</div>
+										</div>
+
+										<div class="mb-3">
+											<label for="email">Email <span class="text-muted">(Optional)</span></label>
+											<input type="email" class="form-control" id="email" placeholder="you@example.com">
+											<div class="invalid-feedback">
+												Please enter a valid email address for shipping updates.
+											</div>
+										</div>
+
+										<div class="mb-3">
+											<label for="address">Address</label>
+											<input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+											<div class="invalid-feedback">
+												Please enter your shipping address.
+											</div>
+										</div>
+
+										<div class="mb-3">
+											<label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+											<input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+										</div>
+
+										<div class="row">
+											<div class="col-md-5 mb-3">
+												<label for="country">Country</label>
+												<select class="custom-select d-block w-100" id="country" required>
+													<option value="">Choose...</option>
+													<option>United States</option>
+												</select>
+												<div class="invalid-feedback">
+													Please select a valid country.
+												</div>
+											</div>
+											<div class="col-md-4 mb-3">
+												<label for="state">State</label>
+												<select class="custom-select d-block w-100" id="state" required>
+													<option value="">Choose...</option>
+													<option>California</option>
+												</select>
+												<div class="invalid-feedback">
+													Please provide a valid state.
+												</div>
+											</div>
+											<div class="col-md-3 mb-3">
+												<label for="zip">Zip</label>
+												<input type="text" class="form-control" id="zip" placeholder="" required>
+												<div class="invalid-feedback">
+													Zip code required.
+												</div>
+											</div>
+										</div>
+										<hr class="mb-4">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="same-address">
+											<label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
+										</div>
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="save-info">
+											<label class="custom-control-label" for="save-info">Save this information for next time</label>
+										</div>
+										<hr class="mb-4">
+
+										<h4 class="mb-3">Payment</h4>
+
+										<div class="d-block my-3">
+											<div class="custom-control custom-radio">
+												<input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+												<label class="custom-control-label" for="credit">Credit card</label>
+											</div>
+											<div class="custom-control custom-radio">
+												<input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+												<label class="custom-control-label" for="debit">Debit card</label>
+											</div>
+											<div class="custom-control custom-radio">
+												<input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+												<label class="custom-control-label" for="paypal">Paypal</label>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-6 mb-3">
+												<label for="cc-name">Name on card</label>
+												<input type="text" class="form-control" id="cc-name" placeholder="" required>
+												<small class="text-muted">Full name as displayed on card</small>
+												<div class="invalid-feedback">
+													Name on card is required
+												</div>
+											</div>
+											<div class="col-md-6 mb-3">
+												<label for="cc-number">Credit card number</label>
+												<input type="text" class="form-control" id="cc-number" placeholder="" required>
+												<div class="invalid-feedback">
+													Credit card number is required
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-3 mb-3">
+												<label for="cc-expiration">Expiration</label>
+												<input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+												<div class="invalid-feedback">
+													Expiration date required
+												</div>
+											</div>
+											<div class="col-md-3 mb-3">
+												<label for="cc-expiration">CVV</label>
+												<input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+												<div class="invalid-feedback">
+													Security code required
+												</div>
+											</div>
+										</div>
+										<hr class="mb-4">
+										<button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 主区域 -->
+			</div>
+			<!-- 内容 -->
+		</div>
+		</div>
+		<!-- 底部 -->
+		<div class="d-flex justify-content-center">
+			<div class="cc-footer">
+				<a href="#">关于财付通</a>
+				<i class="vs">|</i>
+				<a href="#">联系邮箱</a>
+				<i class="vs">|</i>
+				<a href="#">商户平台使用协议</a>
+				<i class="vs">|</i> Powered By Tencent &amp; Tenpay　Copyright &copy; 2005-2016 All Rights Reserved.
+			</div>
+		</div>
+
+		<script>
+			// Example starter JavaScript for disabling form submissions if there are invalid fields
+			(function() {
+				'use strict';
+
+				window.addEventListener('load', function() {
+					// Fetch all the forms we want to apply custom Bootstrap validation styles to
+					var forms = document.getElementsByClassName('needs-validation');
+
+					// Loop over them and prevent submission
+					var validation = Array.prototype.filter.call(forms, function(form) {
+						form.addEventListener('submit', function(event) {
+							if(form.checkValidity() === false) {
+								event.preventDefault();
+								event.stopPropagation();
+							}
+							form.classList.add('was-validated');
+						}, false);
+					});
+				}, false);
+			})();
+		</script>
+	</body>
+
+</html>

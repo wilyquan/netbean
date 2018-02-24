@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>后台布局页面-表单模版</title>
+		<link href="../css/bootstrap.min.css" rel="stylesheet" />
+
+		<link href="../css/icon.css" rel="stylesheet" />
+		<link href="../css/global.css" rel="stylesheet" />
+		<link href="../css/main.css" rel="stylesheet" />
+		<link href="../css/form-validation.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="topbar">
+			<div class="d-flex justify-content-center">
+				<div class="topbar-content topbar-items">
+					<div class="d-flex flex-row justify-content-end nav cc-nav">
+						<a class="nav-link flaticon-piggy-bank" href="#">你好，退出</a>
+						<div class="nav-item">
+							<a class="nav-link" href="#"><img src="../img/common/ico_docu.png" class="nav-item-icon" />开发文档</a>
+						</div>
+						<div class="nav-item">
+							<a class="nav-link" href="#"><img src="../img/common/ico_help.png" class="nav-item-icon" />帮助中心</a>
+						</div>
+						<div class="nav-item">
+							<a class="nav-link active" href="#"><img src="../img/common/ico_new.png" class="nav-item-icon" />消息中心</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header>
+			<div class="d-flex justify-content-center">
+				<div class="header-content">
+					<div class="d-flex flex-row justify-content-start nav">
+						<a href="javascript:;" class="header-logo"><img src="../img/common/logo.png"></img>
+						</a>
+						<a href="../user-info.html" class="nav-link header-nav-item ">我的面板</a>
+						<a href="javascript:;" class="nav-link header-nav-item">系统设置</a>
+						<a href="javascript:;" class="nav-link header-nav-item">客户管理</a>
+						<a href="index.html" class="nav-link header-nav-item active">模版管理</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="d-flex justify-content-center">
+			<!-- 内容 -->
+			<div class="cc-container wrap">
+				<div class="d-flex justify-content-center">
+					<!-- 侧边栏 -->
+					<div class="cc-sidebar">
+						<div class="cc-menu">
+							<!-- 交互说明
+                         1.给标签dl添加样式"open",显示下拉列表
+                         2.给标签dt或dd添加样式"on",显示选中状态
+                    -->
+							<dl>
+								<dt><i class="type-ico "></i>模版信息</dt>
+
+								<dd class="">
+									<a href="info.html">信息介绍</a>
+								</dd>
+
+								<dd class="selected">
+									<a href="form.html">表单信息</a>
+								</dd>
+								<dd class="">
+									<a href="table.html">表格信息</a>
+								</dd>
+
+								<!--<dd class="">
+									<a href="javascript:;">待审核任务</a>
+								</dd>
+
+								<dd class="">
+									<a href="javascript:;">已审核任务</a>
+								</dd>
+
+								<dd class="">
+									<a href="javascript:;">我提交的审核任务</a>
+								</dd>-->
+							</dl>
+							<!--<dl>
+								<dt><i class="type-ico ico-setup"></i>系统设置</dt>
+
+								<dd class="">
+									<a href="#">菜单信息</a>
+								</dd>
+
+								<dd class="">
+									<a href="#">角色信息</a>
+								</dd>
+
+								<dd class="">
+									<a href="#">字典信息</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt><i class="type-ico ico-setup"></i>系统用户</dt>
+
+								<dd class="">
+									<a href="#">用户管理</a>
+								</dd>
+
+								<dd class="">
+									<a href="#">组织管理</a>
+								</dd>
+
+								<dd class="">
+									<a href="#">区域管理</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt class=""><a href="/index.php/core/apply_progress"><i class="type-ico ico-apply"></i>支付申请</a></dt>
+							</dl>-->
+						</div>
+					</div>
+					<!-- 侧边栏 ]] -->
+
+					<!-- 主区域 [[ -->
+					<div class="cc-content">
+						<div class="cc-content-hd">
+							<h2 class="cc-content-title"><p>API安全</p></h2>
+							<!--具体的内容页面-->
+							<div class="cc-content-main">
+								<h6 class="mb-3">基本信息</h6>
+
+								<form class="needs-validation" novalidate>
+									<div class="form-group row">
+										<label for="inputPassword" class="col-sm-2 col-form-label col-form-label-sm text-right">这里是标题的位置</label>
+										<div class="col-sm-4">
+											<input type="text" class="form-control form-control-sm" id="info" placeholder="这是提示信息" required/>
+											<div class="invalid-feedback">
+												Valid first name is required.
+											</div>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label for="inputPassword" class="col-sm-2 col-form-label col-form-label-sm text-right">这里是标题的位置</label>
+										<div class="col-sm-7">
+											<input type="password" class="form-control form-control-sm" id="info-password" placeholder="Password" required/>
+											<div class="invalid-feedback">
+												Valid first name is required.
+											</div>
+										</div>
+									</div>
+									<!--水平单选-->
+									<div class="form-group row">
+										<label for="inputPassword" class="col-sm-2 col-form-label col-form-label-sm text-right">水平单选</label>
+										<div class="col-sm-10">
+											<label class="radio-inline">
+											  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 状态1
+											</label>
+											<label class="radio-inline">
+											  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 状态类型
+											</label>
+											<label class="radio-inline">
+											  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 状态类型2
+											</label>
+										</div>
+									</div>
+									<!--垂直单选-->
+									<div class="form-group row">
+										<label for="inputPassword" class="col-sm-2 col-form-label col-form-label-sm text-right">垂直单选</label>
+										<div class="col-sm-10">
+											<div class="radio">
+												<label>
+											    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+											    状态1
+											  </label>
+											</div>
+											<div class="radio">
+												<label>
+											    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+											    状态2
+											  </label>
+											</div>
+											<div class="radio disabled">
+												<label>
+											    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+											    状态3
+											  </label>
+											</div>
+										</div>
+									</div>
+									<!--水平多选-->
+									<div class="form-group row">
+										<label for="inputPassword" class="col-sm-2 col-form-label col-form-label-sm text-right">水平多选</label>
+										<div class="col-sm-10">
+											<label class="checkbox-inline">
+											  <input type="checkbox" id="inlineCheckbox1" value="option1"> 多选1
+											</label>
+											<label class="checkbox-inline">
+											  <input type="checkbox" class="" id="inlineCheckbox2" value="option2"> 多选2
+											</label>
+											<label class="checkbox-inline">
+											  <input type="checkbox" id="inlineCheckbox3" value="option3"> 多选3
+											</label>
+										</div>
+									</div>
+									<!--垂直多选-->
+									<div class="form-group row">
+										<label for="inputPassword" class="col-sm-2 col-form-label col-form-label-sm text-right">垂直多选</label>
+										<div class="col-sm-10">
+											<div class="checkbox">
+												<label>
+											    <input type="checkbox" value="">
+											    多选1
+											  </label>
+											</div>
+											<div class="checkbox disabled">
+												<label>
+											    <input type="checkbox" value="" disabled>
+											    不能点击的选项
+											  </label>
+											</div>
+										</div>
+									</div>
+									<!--多选表单-->
+									<div class="form-group row">
+										<label for="inputPassword" class="col-sm-2 col-form-label col-form-label-sm text-right">下拉表单</label>
+										<div class="col-sm-2">
+											<select class="form-control form-control-sm">
+												<option selected>Choose...</option>
+												<option>选项1</option>
+												<option>选项2</option>
+												<option>选项3</option>
+												<option>选项4</option>
+												<option>选项5</option>
+											</select>
+										</div>
+									</div>
+									<!---->
+									<div class="form-group row">
+										<label for="inputPassword" class="col-sm-2 col-form-label col-form-label-sm text-right">多选项表单</label>
+										<div class="col-sm-2">
+											<select multiple class="form-control form-control-sm">
+												<option>选项1</option>
+												<option>选项2</option>
+												<option>选项3</option>
+												<option>选项4</option>
+												<option>选项5</option>
+											</select>
+										</div>
+									</div>
+									<!--垂直卡片-->
+									<div class="form-group row">
+										<label for="inputPassword" class="col-sm-2 col-form-label col-form-label-sm text-right">垂直卡片</label>
+										<div class="col-sm-10">
+											<div class="card" style="width: 15rem;">
+												<img class="card-img-top" src="../img/11.jpeg" alt="Card image cap">
+											</div>
+											<div class="card" style="width: 15rem;">
+												<img class="card-img-top" src="../img/12.jpeg" alt="Card image cap">
+											</div>
+											<div class="card" style="width: 15rem;">
+												<img class="card-img-top" src="../img/14.jpeg" alt="Card image cap">
+											</div>
+										</div>
+									</div>
+									<!--水平卡片-->
+									<div class="form-group row">
+										<label for="inputPassword" class="col-sm-2 col-form-label col-form-label-sm text-right">水平卡片</label>
+										<div class="col-sm-10">
+											<div class="row">
+												<div class="col-sm-4">
+													<div class="card" >
+														<img class="card-img-top" src="../img/11.jpeg" alt="Card image cap">
+														<div class="card-body">
+													    		<p class="card-text">照片1</p>
+													  	</div>
+													</div>
+												</div>
+												<div class="col-sm-4">
+													<div class="card" >
+														<img class="card-img-top" src="../img/12.jpeg" alt="Card image cap">
+														<div class="card-body">
+													    		<p class="card-text">照片2</p>
+													  	</div>
+													</div>
+												</div>
+												<div class="col-sm-4">
+													<div class="card" >
+														<img class="card-img-top" src="../img/14.jpeg" alt="Card image cap">
+														<div class="card-body">
+													    		<p class="card-text">照片3</p>
+													  	</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--文件选择1-->
+									<div class="form-group row">
+										<label for="inputPassword" class="col-sm-2 col-form-label col-form-label-sm text-right">文件选择1</label>
+										<div class="col-sm-4">
+											<div class="custom-file ">
+											  <input type="file" class="custom-file-input " id="customFile">
+											  <label class="custom-file-label" for="customFile">Choose file</label>
+											</div>
+										</div>
+									</div>
+									<!--文件选择2-->
+									<div class="form-group row">
+										<label for="inputPassword" class="col-sm-2 col-form-label col-form-label-sm text-right">文件选择2</label>
+										<div class="col-sm-4">
+											<div class="custom-file ">
+											  <input type="file" class="form-control-file form-control-sm" id="exampleFormControlFile1">
+											</div>
+										</div>
+									</div>
+									<!---->
+									<div class="form-group row">
+										<label for="inputPassword" class="col-sm-2 col-form-label col-form-label-sm text-right">文本区域</label>
+										<div class="col-sm-7">
+											<textarea class="form-control col-form-label-sm" id="exampleFormControlTextarea1" rows="3" required=""></textarea>
+											<div class="invalid-feedback">
+												文本区域不能为空.
+											</div>
+											<small id="passwordHelpBlock" class="form-text text-muted">
+											 你输入的长度不能少于10个字符
+											</small>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label for="inputPassword" class="col-sm-2 col-form-label col-form-label-sm text-right">只读输入框</label>
+										<div class="col-sm-4">
+											<input type="text" class="form-control form-control-sm" readonly id="info" value="只读内容" placeholder="" required></input>
+										</div>
+									</div>
+									
+									<div class="form-group row">
+										<label for="inputPassword" class="col-sm-2 col-form-label col-form-label-sm text-right">标题</label>
+										<div class="col-sm-3">
+											<input type="text" class="form-control form-control-sm" id="info" placeholder="这是提示信息" required/>
+											<div class="invalid-feedback">
+												Valid first name is required.
+											</div>
+										</div>
+										<div class="col-sm-1">
+											<button class="btn btn-primary  sm-2 btn-sm">查询</button>
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label for="staticEmail" class="col-sm-2 col-form-label col-form-label-sm text-right">用户名</label>
+										<div class="col-lg-10">
+											<input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+										</div>
+									</div>
+									
+									
+
+								
+
+									
+									<hr class="mb-4">
+								
+									<div class="row">
+										
+										<hr class="mb-4">
+										<button class="btn btn-primary btn-lg btn-block" type="submit">提交</button>
+								</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 主区域 -->
+			</div>
+			<!-- 内容 -->
+		</div>
+		</div>
+		<!-- 底部 -->
+		<div class="d-flex justify-content-center">
+			<div class="cc-footer">
+				<a href="#">关于财付通</a>
+				<i class="vs">|</i>
+				<a href="#">联系邮箱</a>
+				<i class="vs">|</i>
+				<a href="#">商户平台使用协议</a>
+				<i class="vs">|</i> Powered By Tencent &amp; Tenpay　Copyright &copy; 2005-2016 All Rights Reserved.
+			</div>
+		</div>
+
+		<script>
+			// Example starter JavaScript for disabling form submissions if there are invalid fields
+			(function() {
+				'use strict';
+
+				window.addEventListener('load', function() {
+					// Fetch all the forms we want to apply custom Bootstrap validation styles to
+					var forms = document.getElementsByClassName('needs-validation');
+
+					// Loop over them and prevent submission
+					var validation = Array.prototype.filter.call(forms, function(form) {
+						form.addEventListener('submit', function(event) {
+							if(form.checkValidity() === false) {
+								event.preventDefault();
+								event.stopPropagation();
+							}
+							form.classList.add('was-validated');
+						}, false);
+					});
+				}, false);
+			})();
+		</script>
+	</body>
+
+</html>

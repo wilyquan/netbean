@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>后台布局页面-信息模版</title>
+		<link href="../css/bootstrap.min.css" rel="stylesheet" />
+
+		<link href="../css/icon.css" rel="stylesheet" />
+		<link href="../css/global.css" rel="stylesheet" />
+		<link href="../css/form-validation.css" rel="stylesheet" />
+		<link href="../css/main.css" rel="stylesheet" />
+		<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+	</head>
+
+	<body>
+		<div class="topbar">
+			<div class="d-flex justify-content-center">
+				<div class="topbar-content topbar-items">
+					<div class="d-flex flex-row justify-content-end nav cc-nav">
+						<a class="nav-link flaticon-piggy-bank" href="#">你好，退出</a>
+						<div class="nav-item">
+							<a class="nav-link" href="#"><img src="../img/common/ico_docu.png" class="nav-item-icon" />开发文档</a>
+						</div>
+						<div class="nav-item">
+							<a class="nav-link" href="#"><img src="../img/common/ico_help.png" class="nav-item-icon" />帮助中心</a>
+						</div>
+						<div class="nav-item">
+							<a class="nav-link active" href="#"><img src="../img/common/ico_new.png" class="nav-item-icon" />消息中心</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header>
+			<div class="d-flex justify-content-center">
+				<div class="header-content">
+					<div class="d-flex flex-row justify-content-start nav">
+						<a href="javascript:;" class="header-logo"><img src="../img/common/logo.png"></img>
+						</a>
+						<a href="../user-info.html" class="nav-link header-nav-item ">我的面板</a>
+						<a href="javascript:;" class="nav-link header-nav-item">系统设置</a>
+						<a href="javascript:;" class="nav-link header-nav-item">客户管理</a>
+						<a href="index.html" class="nav-link header-nav-item active">模版管理</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="d-flex justify-content-center">
+			<!-- 内容 -->
+			<div class="cc-container wrap">
+				<div class="d-flex justify-content-center">
+					<!-- 侧边栏 -->
+					<div class="cc-sidebar">
+						<div class="cc-menu">
+							<!-- 交互说明
+                         1.给标签dl添加样式"open",显示下拉列表
+                         2.给标签dt或dd添加样式"on",显示选中状态
+                    -->
+							<dl>
+								<dt><i class="type-ico "></i>模版信息</dt>
+
+								<dd class="">
+									<a href="info.html">信息介绍</a>
+								</dd>
+
+								<dd class="">
+									<a href="form.html">表单信息</a>
+								</dd>
+								<dd class="selected">
+									<a href="table.html">表格信息</a>
+								</dd>
+
+								<!--<dd class="">
+									<a href="javascript:;">待审核任务</a>
+								</dd>
+
+								<dd class="">
+									<a href="javascript:;">已审核任务</a>
+								</dd>
+
+								<dd class="">
+									<a href="javascript:;">我提交的审核任务</a>
+								</dd>-->
+							</dl>
+							<!--<dl>
+								<dt><i class="type-ico ico-setup"></i>系统设置</dt>
+
+								<dd class="">
+									<a href="#">菜单信息</a>
+								</dd>
+
+								<dd class="">
+									<a href="#">角色信息</a>
+								</dd>
+
+								<dd class="">
+									<a href="#">字典信息</a>
+								</dd>
+							</dl>-->
+							<!--<dl>
+								<dt><i class="type-ico ico-setup"></i>系统用户</dt>
+
+								<dd class="">
+									<a href="#">用户管理</a>
+								</dd>
+
+								<dd class="">
+									<a href="#">组织管理</a>
+								</dd>
+
+								<dd class="">
+									<a href="#">区域管理</a>
+								</dd>
+							</dl>-->
+							<!--<dl>
+								<dt class=""><a href="/index.php/core/apply_progress"><i class="type-ico ico-apply"></i>支付申请</a></dt>
+							</dl>-->
+						</div>
+					</div>
+					<!-- 侧边栏 ]] -->
+
+					<!-- 主区域 [[ -->
+					<div class="cc-content">
+						<div class="cc-content-hd">
+							<h2 class="cc-content-title"><p>账户信息</p></h2>
+							<!--具体的内容页面-->
+							<div class="cc-content-main">
+								<!--<h6 class="mb-3">详细信息</h6>-->
+
+								<div class="cc-row">
+									<!--搜索条件-->
+									<div class="col-sm-12 row">
+										<div class="col-sm-4 form-inline form-group">
+											<label class="col-4 form-control-sm justify-content-end" for="exampleInputEmail3">邮箱地址</label>
+											<input type="email" class="col-8  form-control form-control-sm " id="exampleInputEmail" placeholder="Email">
+										</div>
+										<div class="col-sm-4 form-inline form-group">
+											<label class="col-4 form-control-sm  justify-content-end" for="exampleInputEmail3">邮箱</label>
+											<input type="email" class="col-8 form-control form-control-sm" id="exampleInputEmail2" placeholder="Email">
+										</div>
+										<div class="col-sm-4 form-inline form-group">
+											<label class="form-control-sm col-4 justify-content-end" for="exampleInputEmail3">邮箱地址</label>
+											<input type="email" class="col-8 form-control form-control-sm" id="exampleInputEmail3" placeholder="Email">
+										</div>
+										<div class="col-sm-4 form-inline form-group">
+											<label class="form-control-sm col-4 justify-content-end" for="exampleInputEmail3">邮箱地址</label>
+											<input type="email" class="col-8 form-control form-control-sm" id="exampleInputEmail4" placeholder="Email">
+										</div>
+										<div class="col-sm-4 form-inline form-group">
+											<label class="form-control-sm col-4 justify-content-end" for="exampleInputEmail3">邮箱地址</label>
+											<input type="email" class="col-8 form-control form-control-sm" id="exampleInputEmail5" placeholder="Email">
+										</div>
+									</div>
+									<!--<button class="btn btn-primary btn-block cc-button cc-button-ok" type="submit">提交</button>
+										<button class="btn btn-primary btn-block cc-button cc-button-ok" type="submit">提交</button>-->
+									<div class="cc-query-group">
+										<button class="col-8 btn btn-primary cc-button cc-button-ok" type="submit">提交</button>
+										<button class="col-8 btn btn-primary cc-button cc-button-ok" type="submit">下载</button>
+									</div>
+									<hr class="mb-4" />
+									<!--搜索条件-->
+								</div>
+								<!--table-->
+								<div class="row cc-card-row">
+									<div class="col-sm-12 d-flex  justify-content-between">
+										<div class="cc-table-top-left">共有100条数据</div>
+										<div class="d-flex justify-content-start cc-table-top-right">
+											<a class="cc-button-icon-lable" href="#"><img src="../img/common/icon-add.png" class="cc-icon-size"></img>添加</a>
+											<a class="cc-button-icon-lable" href="#"><img src="../img/common/icon-del.png" class="cc-icon-size"></img>删除</a>
+										</div>
+
+									</div>
+									<div class="col-sm-12 ">
+										<div class="cc-table">
+											<table class="table table-sm table-hover table-bordered">
+												<!--<caption>List of users</caption>-->
+												<thead>
+													<tr>
+														<th scope="col">类型</th>
+														<th scope="col">标签</th>
+														<th scope="col">键值</th>
+														<th scope="col">排序</th>
+														<th scope="col">排序</th>
+														<th scope="col">排序</th>
+														<th scope="col">排序</th>
+														<th scope="col">操作</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>@内容状态</td>
+														<td><a class="cc-col-a" href="#">编辑</a><a class="cc-col-a" href="#">删除</a></td>
+													</tr>
+													<tr>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>@内容状态</td>
+														<td><a class="cc-col-a" href="#">编辑</a><a class="cc-col-a" href="#">删除</a></td>
+													</tr>
+													<tr>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>@内容状态</td>
+														<td><a class="cc-col-a" href="#">编辑</a><a class="cc-col-a" href="#">删除</a></td>
+													</tr>
+													<tr>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>@内容状态</td>
+														<td><a class="cc-col-a" href="#">编辑</a><a class="cc-col-a" href="#">删除</a></td>
+													</tr>
+													<tr>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>@内容状态</td>
+														<td><a class="cc-col-a" href="#">编辑</a><a class="cc-col-a" href="#">删除</a></td>
+													</tr>
+													<tr>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>@内容状态</td>
+														<td><a class="cc-col-a" href="#">编辑</a><a class="cc-col-a" href="#">删除</a></td>
+													</tr>
+													<tr>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>@内容状态</td>
+														<td><a class="cc-col-a" href="#">编辑</a><a class="cc-col-a" href="#">删除</a></td>
+													</tr>
+													<tr>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>@内容状态</td>
+														<td><a class="cc-col-a" href="#">编辑</a><a class="cc-col-a" href="#">删除</a></td>
+													</tr>
+													<tr>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>@内容状态</td>
+														<td><a class="cc-col-a" href="#">编辑</a><a class="cc-col-a" href="#">删除</a></td>
+													</tr>
+													<tr>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>@内容状态</td>
+														<td><a class="cc-col-a" href="#">编辑</a><a class="cc-col-a" href="#">删除</a></td>
+													</tr>
+													<tr>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>@内容状态</td>
+														<td><a class="cc-col-a" href="#">编辑</a><a class="cc-col-a" href="#">删除</a></td>
+													</tr>
+													<tr>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>@内容状态</td>
+														<td><a class="cc-col-a" href="#">编辑</a><a class="cc-col-a" href="#">删除</a></td>
+													</tr>
+													<tr>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>@内容状态</td>
+														<td><a class="cc-col-a" href="#">编辑</a><a class="cc-col-a" href="#">删除</a></td>
+													</tr>
+													<tr>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>内容状态</td>
+														<td>@内容状态</td>
+														<td><a class="cc-col-a" href="#">编辑</a><a class="cc-col-a" href="#">删除</a></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<!--table-->
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 主区域 -->
+		</div>
+		<!-- 内容 -->
+		</div>
+		</div>
+		<!-- 底部 -->
+		<div class="d-flex justify-content-center">
+			<div class="cc-footer">
+				<a href="#">关于财付通</a>
+				<i class="vs">|</i>
+				<a href="#">联系邮箱</a>
+				<i class="vs">|</i>
+				<a href="#">商户平台使用协议</a>
+				<i class="vs">|</i> Powered By Tencent &amp; Tenpay　Copyright &copy; 2005-2016 All Rights Reserved.
+			</div>
+		</div>
+
+		<script>
+			// Example starter JavaScript for disabling form submissions if there are invalid fields
+			(function() {
+				'use strict';
+
+				window.addEventListener('load', function() {
+					// Fetch all the forms we want to apply custom Bootstrap validation styles to
+					var forms = document.getElementsByClassName('needs-validation');
+
+					// Loop over them and prevent submission
+					var validation = Array.prototype.filter.call(forms, function(form) {
+						form.addEventListener('submit', function(event) {
+							if(form.checkValidity() === false) {
+								event.preventDefault();
+								event.stopPropagation();
+							}
+							form.classList.add('was-validated');
+						}, false);
+					});
+				}, false);
+			})();
+		</script>
+	</body>
+
+</html>

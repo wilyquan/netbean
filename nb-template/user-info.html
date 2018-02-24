@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>后台布局页面-修改密码</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+
+		<link href="css/icon.css" rel="stylesheet" />
+		<link href="css/global.css" rel="stylesheet" />
+		<link href="css/form-validation.css" rel="stylesheet" />
+		<link href="css/main.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+
+	</head>
+
+	<body>
+		<div class="topbar">
+			<div class="d-flex justify-content-center">
+				<div class="topbar-content topbar-items">
+					<div class="d-flex flex-row justify-content-end nav cc-nav">
+						<a class="nav-link flaticon-piggy-bank" href="#">你好，退出</a>
+						<div class="nav-item">
+							<a class="nav-link" href="#"><img src="img/common/ico_docu.png" class="nav-item-icon" />开发文档</a>
+						</div>
+						<div class="nav-item">
+							<a class="nav-link" href="#"><img src="img/common/ico_help.png" class="nav-item-icon" />帮助中心</a>
+						</div>
+						<div class="nav-item">
+							<a class="nav-link active" href="#"><img src="img/common/ico_new.png" class="nav-item-icon" />消息中心</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header>
+			<div class="d-flex justify-content-center">
+				<div class="header-content">
+					<div class="d-flex flex-row justify-content-start nav">
+						<a href="javascript:;" class="header-logo"><img src="img/common/logo.png"></img>
+						</a>
+						<a href="user-info.html" class="nav-link header-nav-item active">我的面板</a>
+						<a href="javascript:;" class="nav-link header-nav-item">系统设置</a>
+						<a href="javascript:;" class="nav-link header-nav-item">客户管理</a>
+						<a href="template/index.html" class="nav-link header-nav-item">模版管理</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="d-flex justify-content-center">
+			<!-- 内容 -->
+			<div class="cc-container wrap">
+				<div class="d-flex justify-content-center">
+					<!-- 侧边栏 -->
+					<div class="cc-sidebar">
+						<div class="cc-menu">
+							<!-- 交互说明
+                         1.给标签dl添加样式"open",显示下拉列表
+                         2.给标签dt或dd添加样式"on",显示选中状态
+                    -->
+							<dl>
+								<dt><i class="type-ico "></i>个人设置</dt>
+
+								<dd class="selected">
+									<a href="user-info.html">个人信息</a>
+								</dd>
+
+								<dd class="">
+									<a href="change-pwd.html">修改密码</a>
+								</dd>
+
+								<!--<dd class="">
+									<a href="javascript:;">待审核任务</a>
+								</dd>
+
+								<dd class="">
+									<a href="javascript:;">已审核任务</a>
+								</dd>
+
+								<dd class="">
+									<a href="javascript:;">我提交的审核任务</a>
+								</dd>-->
+							</dl>
+							<!--<dl>
+								<dt><i class="type-ico ico-setup"></i>系统设置</dt>
+
+								<dd class="">
+									<a href="#">菜单信息</a>
+								</dd>
+
+								<dd class="">
+									<a href="#">角色信息</a>
+								</dd>
+
+								<dd class="">
+									<a href="#">字典信息</a>
+								</dd>
+							</dl>-->
+							<!--<dl>
+								<dt><i class="type-ico ico-setup"></i>系统用户</dt>
+
+								<dd class="">
+									<a href="#">用户管理</a>
+								</dd>
+
+								<dd class="">
+									<a href="#">组织管理</a>
+								</dd>
+
+								<dd class="">
+									<a href="#">区域管理</a>
+								</dd>
+							</dl>-->
+							<!--<dl>
+								<dt class=""><a href="/index.php/core/apply_progress"><i class="type-ico ico-apply"></i>支付申请</a></dt>
+							</dl>-->
+						</div>
+					</div>
+					<!-- 侧边栏 ]] -->
+
+					<!-- 主区域 [[ -->
+					<div class="cc-content">
+						<div class="cc-content-hd">
+							<h2 class="cc-content-title"><p>账户信息</p></h2>
+							<!--具体的内容页面-->
+							<div class="cc-content-main">
+								<!--<h6 class="mb-3">详细信息</h6>-->
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="row cc-row">
+											<div class="col-sm-12 ">
+												<div id="accordion">
+												  <div class="card">
+												    <div class="card-header cc-card-header" id="headingOne">
+												      <h8 class="mb-3">
+												      	账户信息
+												        <!--<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+												         账户信息
+												        </button>-->
+												      </h8>
+												    </div>
+												    <!--账户信息-->
+												    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+												      <div class="card-body">
+												      	<div class="row">
+												      		<div class="col-sm-6">
+												      			<label class="col-3 cc-col-form-label-sm text-right">登陆账户</label>
+												      			<label class="col-8 cc-col-form-label-sm text-left">root</label>
+												      		</div>
+												      		<div class="col-sm-6">
+												      			<label class="col-3 cc-col-form-label-sm text-right">用户角色</label>
+												      			<label class="col-8 cc-col-form-label-sm text-left">公司管理员，系统管理员</label>
+												      		</div>
+												      	</div>
+												      	<div class="row">
+												      		<div class="col-sm-6">
+												      			<label class="col-3 cc-col-form-label-sm text-right">创建时间</label>
+												      			<label class="col-8 cc-col-form-label-sm text-left">2018年1月18日 12:10:11</label>
+												      		</div>
+												      		<div class="col-sm-6">
+												      			<label class="col-3 cc-col-form-label-sm text-right">用户类型</label>
+												      			<label class="col-8 cc-col-form-label-sm text-left">普通员工</label>
+												      		</div>
+												      	</div>
+												      </div>
+												    </div>
+												  </div>
+												</div>
+											</div>
+										</div>
+										
+										<div class="row cc-card-row">
+											<div class="col-sm-12 ">
+												<div id="accordion">
+												  <div class="card">
+												    <div class="card-header cc-card-header" id="headingOne">
+												      <h8 class="mb-3">
+												      	基本信息
+												      </h8>
+												    </div>
+												    <!--账户信息-->
+												    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+												      <div class="card-body">
+												      	<div class="row">
+												      		<div class="col-sm-6">
+												      			<label class="col-3 cc-col-form-label-sm text-right">姓名</label>
+												      			<label class="col-8 cc-col-form-label-sm text-left">管理员</label>
+												      		</div>
+												      		<div class="col-sm-6">
+												      			<label class="col-3 cc-col-form-label-sm text-right">手机号码</label>
+												      			<label class="col-8 cc-col-form-label-sm text-left"><a href="tel:152000000">1520000000</a></label>
+												      		</div>
+												      	</div>
+												      	<div class="row">
+												      		<div class="col-sm-6">
+												      			<label class="col-3 cc-col-form-label-sm text-right">邮箱地址</label>
+												      			<label class="col-8 cc-col-form-label-sm text-left">admin@jewelvary.com</label>
+												      		</div>
+												      		<div class="col-sm-6">
+												      			<label class="col-3 cc-col-form-label-sm text-right">用户类型</label>
+												      			<label class="col-8 cc-col-form-label-sm text-left">普通员工</label>
+												      		</div>
+												      	</div>
+												      </div>
+												    </div>
+												  </div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 主区域 -->
+		</div>
+		<!-- 内容 -->
+		</div>
+		</div>
+		<!-- 底部 -->
+		<div class="d-flex justify-content-center">
+			<div class="cc-footer">
+				<a href="#">关于财付通</a>
+				<i class="vs">|</i>
+				<a href="#">联系邮箱</a>
+				<i class="vs">|</i>
+				<a href="#">商户平台使用协议</a>
+				<i class="vs">|</i> Powered By Tencent &amp; Tenpay　Copyright &copy; 2005-2016 All Rights Reserved.
+			</div>
+		</div>
+
+		<script>
+			// Example starter JavaScript for disabling form submissions if there are invalid fields
+			(function() {
+				'use strict';
+
+				window.addEventListener('load', function() {
+					// Fetch all the forms we want to apply custom Bootstrap validation styles to
+					var forms = document.getElementsByClassName('needs-validation');
+
+					// Loop over them and prevent submission
+					var validation = Array.prototype.filter.call(forms, function(form) {
+						form.addEventListener('submit', function(event) {
+							if(form.checkValidity() === false) {
+								event.preventDefault();
+								event.stopPropagation();
+							}
+							form.classList.add('was-validated');
+						}, false);
+					});
+				}, false);
+			})();
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,131 @@
+
+.topbar{background: #3C474A; height: 30px;}
+.topbar-content{width: 1200px; /*background: #0056B3;*/}
+
+.topbar-items{height: 30px; line-height: 30px;}
+.nav-link {padding: 0px 10px;color: #dddddd;font-size: 13px;}
+.nav-item .nav-item-icon {vertical-align: middle; display: inline-block; width: 16px;height: 16px; margin:-3px 5px 0 0;}
+.cc-nav a.nav-link:hover{color: #FFFFFF;}
+
+header{height: 70px;border-bottom: 1px solid #d9dadc; background: #FFFFFF;}
+header .header-content{width: 1200px;/*background: #0062CC;*/height: 70px;line-height: 70px;}
+.header-logo{margin-right: 50px;}
+.header-nav-item{height: 70px;line-height: 70px;font-size: 16px;color: #222222;font-weight: 400;width: 110px;text-align: center;}
+a.header-nav-item.active{border-bottom: 4px solid #44b549;color: #222222;}
+a.header-nav-item.active:hover{border-bottom: 4px solid #44b549; color: #222222;}
+a.header-nav-item:hover{border-bottom: 4px solid #A0A3AA;color: #222222;}
+a.header-nav-item:focus{border-bottom: 4px solid #A0A3AA;color: #222222;}
+
+.cc-wrap{width:1200px;margin:0 auto;}
+.cc-container{width:1200px;margin:35px auto 30px;overflow:hidden;border:1px solid #d9dadc;background:#ffffff;overflow:hidden;}
+.cc-container-hd{padding:0 20px;line-height:52px;height:52px;background:#f4f5f9;}
+.cc-container-bd{padding:30px;height:auto;min-height:400px;_height:400px;}
+
+/* 菜单 */
+.cc-sidebar{float:left;width:208px;border-right:1px solid #e7e7eb;margin-bottom: -9999px;
+padding-bottom: 9999px;}
+.cc-content{float:right;width:991px;height:auto;min-height:600px;_height:600px;}
+.cc-content,.cc-sidebar{margin-bottom:-9999px;padding-bottom:9999px;}
+.cc-content-hd h2{padding:0 30px;line-height:75px;font-size:16px;}
+.cc-content-hd h2.cc-content-title{border-bottom:1px solid #e7e7eb;}
+.cc-content-main {margin: 20px; }
+
+.cc-menu{padding:13px 0;}
+.cc-menu dl{padding:6px 0;line-height:34px;border-bottom:1px solid #e7e7eb;}
+.cc-menu dl:last-child{border-bottom:none;}
+.cc-menu dl a{display:block;color:#222;} 
+.cc-menu dl a:hover{text-decoration:none;background:#f4f5f9;} 
+.cc-menu dl dt{color:#8d8d8d;}
+.cc-menu dl dt .type-ico{margin-left:30px;}
+.cc-menu dl dd a{display:block;padding-left:58px;}
+
+.cc-menu .selected a, .cc-menu .selected a:hover{color:#ffffff;background:#44b549;color:#fff;}
+.cc-menu .ico-new{margin-left:6px;}
+.cc-menu .type-ico{display:inline-block;width:20px;height:20px;margin:-3px 8px 0 0;vertical-align:middle;background:url(../img/common/ico_menu.png) no-repeat;}
+.cc-menu .ico-account{background-position:0 0;}
+.cc-menu .ico-trade{background-position:0 -20px;}
+.cc-menu .ico-settle{background-position:0 -40px;}
+.cc-menu .ico-bill{background-position:0 -60px;}
+.cc-menu .ico-fund{background-position:0 -80px;}
+.cc-menu .ico-setup{background-position:0 -100px;}
+.cc-menu .ico-senior{background-position:0 -120px;}
+.cc-menu .ico-audit{background-position:0 -140px;}
+.cc-menu .ico-coupon{background-position:0 -160px;}
+.cc-menu .ico-minus{background-position:0 -180px;}
+.cc-menu .ico-market{background-position:0 -200px;}
+.cc-menu .ico-hongbao{background-position:0 -220px;}
+.cc-menu .ico-branch{background-position:0 -240px;}
+.cc-menu .ico-apply{background-position:0 -260px;}
+.cc-menu .ico-collate{background-position:0 -280px;}
+.cc-menu .ico-stats{background-position:0 -300px;}
+.cc-menu .ico-product{background-position:0 -320px;}
+.cc-menu .ico-possess{background-position:0 -340px;}
+.cc-menu .ico-protocol{background-position:0 -360px;}
+.cc-menu .ico-transact{background-position:0 -380px;}
+.cc-menu .ico-feeds{background-position:0 -400px;}
+.cc-menu .ico-customs{background-position:0 -420px;}
+.cc-menu .ico-marketing{background-position:0 -440px;}
+.cc-menu .ico-cmn{background-position:0 -460px;}
+.cc-menu .ico-qrcode{background-position:0 -480px;}
+.cc-menu .ico-personal{background-position:0 -500px;}
+
+.cc-menu .selected .ico-account{background-position:-20px 0;}
+.cc-menu .selected .ico-trade{background-position:-20px -20px;}
+.cc-menu .selected .ico-settle{background-position:-20px -40px;}
+.cc-menu .selected .ico-bill{background-position:-20px -60px;}
+.cc-menu .selected .ico-fund{background-position:-20px -80px;}
+.cc-menu .selected .ico-setup{background-position:-20px -100px;}
+.cc-menu .selected .ico-senior{background-position:-20px -120px;}
+.cc-menu .selected .ico-audit{background-position:-20px -140px;}
+.cc-menu .selected .ico-coupon{background-position:-20px -160px;}
+.cc-menu .selected .ico-minus{background-position:-20px -180px;}
+.cc-menu .selected .ico-market{background-position:-20px -200px;}
+.cc-menu .selected .ico-hongbao{background-position:-20px -220px;}
+.cc-menu .selected .ico-branch{background-position:-20px -240px;}
+.cc-menu .selected .ico-apply{background-position:-20px -260px;}
+.cc-menu .selected .ico-collate{background-position:-20px -280px;}
+.cc-menu .selected .ico-stats{background-position:-20px -300px;}
+.cc-menu .selected .ico-product{background-position:-20px -320px;}
+.cc-menu .selected .ico-possess{background-position:-20px -340px;}
+.cc-menu .selected .ico-protocol{background-position:-20px -360px;}
+.cc-menu .selected .ico-transact{background-position:-20px -380px;}
+.cc-menu .selected .ico-feeds{background-position:-20px -400px;}
+.cc-menu .selected .ico-customs{background-position:-20px -420px;}
+.cc-menu .selected .ico-marketing{background-position:-20px -440px;}
+.cc-menu .selected .ico-cmn{background-position:-20px -460px;}
+.cc-menu .selected .ico-qrcode{background-position:-20px -480px;}
+.cc-menu .selected .ico-personal{background-position:-20px -500px;}
+
+
+/* 脚部 */
+.cc-footer{padding-bottom:30px;color:#8d8d8d;text-align:center;font:12px/1.6 tahoma,arial,"Hiragino Sans GB",\5B8B\4F53,sans-serif;}
+.cc-footer a{color:#8d8d8d;}
+.cc-footer a:hover{color:#459ae9}
+.cc-footer .vs{color:#ccc;}
+
+/*内容部分*/
+.cc-card-header {padding: .30rem 1.25rem; background: #F4F5F9;}
+.cc-col-form-label-sm{line-height: 1.rem;}
+.cc-card-row {margin-top: 30px;}
+
+.cc-query-group {margin-left: 60px;margin-top: 10px;}
+.cc-button{line-height: 1.2; height: 1.2; }
+.cc-button.cc-button-ok{max-width: 110px; background: #44B549; margin:0px 10px ;color: #FFFFFF; border-color: #44B549;}
+
+
+.cc-table {border-radius: .25rem; border: 1px solid rgba(0,0,0,.125);}
+.cc-table thead th{ background: #F4F5F9; border-bottom: 0px; border-top: 0px;padding:5px;font-weight: normal; font-size: 14px;}
+.cc-table tbody td{ font-size: 14px;}
+.cc-page {margin-top: 15px;}
+
+.cc-table-top-left{color: #666666; margin-bottom: 10px; font-size: 13px;}
+.cc-table-top-right{margin-bottom: 10px; font-size: 14px;line-height: 20px; vertical-align: middle; display: block}
+.cc-button-icon-lable{margin-left: 5px;margin-right:5px; }
+.cc-icon-size {width: 15px; margin-left: 5px;}
+.cc-table .table{margin: 0px;}
+.cc-col-a{margin-left: 5px;}
+
+
+.cc-form-group{width: 280px;}
+
+

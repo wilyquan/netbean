@@ -1,0 +1,30 @@
+html,
+body {
+  height: 100%;
+  background-color: #333;
+  background:url("../img/common/bg-2.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+/*body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}*/
+
+
+.topbar{background: rgba(60,71,74,.3); height: 30px;}
+.topbar-items{height: 30px; line-height: 30px;}
+.topbar-content{/*width: 1200px;*/ /*background: #0056B3;*/}
+.nav-link {padding: 0px 10px;color: #dddddd;font-size: 13px;}
+.nav-link {padding: 0px 10px;color: #dddddd;font-size: 13px;}
+.nav-item .nav-item-icon {vertical-align: middle; display: inline-block; width: 16px;height: 16px; margin:-3px 5px 0 0;}
+.cc-nav a.nav-link:hover{color: #FFFFFF;}
+
+/* 脚部 */
+.cc-footer{padding-bottom:30px;color:#8d8d8d;text-align:center;font:12px/1.6 tahoma,arial,"Hiragino Sans GB",\5B8B\4F53,sans-serif;}
+.cc-footer a{color:#8d8d8d;}
+.cc-footer a:hover{color:#459ae9}
+.cc-footer .vs{color:#ccc;}
+
+.cc-container{width: 1200px; height: 100%;}

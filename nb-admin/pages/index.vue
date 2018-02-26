@@ -19,11 +19,29 @@
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
+import nb from '@/js/message';
+//var nb = require('@/js/object')
 
 export default {
   components: {
     AppLogo
-  }
+  },
+	asyncData(){
+		console.log(nb)
+		nb.header("application", "service", "subservice");
+		console.log(nb.header.application);
+		
+//		var m = new message("application", "service", "subservice", "msg");
+//		console.log("asyncData index = " + m);
+////		console.log(m.toString());
+//		var h = new header("application", "service", "subservice");
+//		console.log(h.application);
+//		console.log(h.service);
+//		console.log(h.subservice);
+//		console.log(h)
+		
+	}
+  
 }
 </script>
 

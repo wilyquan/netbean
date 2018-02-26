@@ -28,9 +28,11 @@ export default {
   },
 	asyncData(){
 		console.log(nb)
-		nb.header("application", "service", "subservice");
+		nb.head("application", "service", "subservice");
 		console.log(nb.header.application);
 		console.log(nb);
+		var js = JSON.stringify(nb);
+		console.log(js);
 //		var m = new message("application", "service", "subservice", "msg");
 //		console.log("asyncData index = " + m);
 ////		console.log(m.toString());

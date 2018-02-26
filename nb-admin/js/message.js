@@ -3,34 +3,33 @@
 'use strict';
 
 var nb = exports = module.exports = {
-	header : {
-		application : "",
-		service : "",
-		subservice : ""
-	},
-	body : {
-		status : {
-			code : -1,
-			msg : ""
-		}
-	}
+//	header : {
+//		application : "",
+//		service : "",
+//		subservice : ""
+//	},
+//	body : {
+//		status : {
+//			code : -1,
+//			msg : ""
+//		}
+//	}
 	
 };
-
+//
 //nb.init = function init(){
 //	console.log("init");
-//	this.header = {};
-//	this.msg = "";
+//	
 //}
 
 
 
-nb.header = function header(application, service, subservice){
-	this.header = {
-		application : application,
-		service : service,
-		subservice : subservice
-	}
+nb.head = function head(application, service, subservice){
+//	this.header = {
+//		application : application,
+//		service : service,
+//		subservice : subservice
+//	}
 }
 
 exports.nb = nb;

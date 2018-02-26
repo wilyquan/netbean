@@ -2,13 +2,28 @@
 
 'use strict';
 
-var nb = exports = module.exports = {};
+var nb = exports = module.exports = {
+	header : {
+		application : "",
+		service : "",
+		subservice : ""
+	},
+	body : {
+		status : {
+			code : -1,
+			msg : ""
+		}
+	}
+	
+};
 
-nb.init = function init(){
-	console.log("init");
-	this.header = {};
-	this.msg = "";
-}
+//nb.init = function init(){
+//	console.log("init");
+//	this.header = {};
+//	this.msg = "";
+//}
+
+
 
 nb.header = function header(application, service, subservice){
 	this.header = {

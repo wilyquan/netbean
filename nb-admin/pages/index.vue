@@ -30,7 +30,7 @@ export default {
 		console.log(nb)
 		nb.header("application", "service", "subservice");
 		console.log(nb.header.application);
-		
+		console.log(nb);
 //		var m = new message("application", "service", "subservice", "msg");
 //		console.log("asyncData index = " + m);
 ////		console.log(m.toString());

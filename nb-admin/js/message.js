@@ -5,6 +5,10 @@
 export const sSuccess = 0;
 export const sFail = 1;
 
+export const APPLICATION = "LV90KKJKNBYTADEB004589UIBIOMJU76";
+export const SERVICE_SYS = "sys";
+export const SUBSERVICE_LOGIN = "login";
+
 class Object {
 	//将对象转换为json字符串
 	toJSONString(){
@@ -19,7 +23,6 @@ class Header extends Object {
 
 	constructor(application, service, subservice) {
 		super();
-		this.application = application;
 		this.service = service;
 		this.subservice = subservice;
 	}
@@ -44,15 +47,13 @@ class Body extends Object {
 		}
 		return this.status;
 	}
-
 }
 
 class Message extends Object {
 
-	constructor(application, service, subservice, msg) {
+	constructor(application, service, subservice) {
 		super();
 		this.header = new Header(application, service, subservice);
-		this.msg = msg;
 	}
 
 	toString() {
@@ -96,11 +97,9 @@ class Message extends Object {
 		if(this.body == null) {
 			return null;
 		}
-
 		return this.body.data;
-
 	}
-	
+
 	//如果data部分为数组，则建议用此函数
 	addData(data){
 		var d = this.getData();
@@ -327,13 +326,11 @@ class Response extends Object{
 	
 }
 
+export var Login = new Message(APPLICATION, SERVICE_SYS, SUBSERVICE_LOGIN);
+
 export {
 	Message,
 	Header,
 	Object,
 	Response
 };
-
-//exports.header = NBHeader;
-//exports.message = NBMessage;
-//module.exports.hello=hello;

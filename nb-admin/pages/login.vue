@@ -152,6 +152,7 @@
 		},
 		methods: {
 			async login(){
+				console.log("------login----------")
 				auth.login(this.formUsername, this.formPassword);
 				this.$store.commit('SET_TOKEN', 'token');
 				this.$router.push('/admin');

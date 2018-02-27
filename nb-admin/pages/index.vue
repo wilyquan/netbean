@@ -19,7 +19,7 @@
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
-import nb from '@/js/message';
+import {Message, Header, Response} from '@/js/message';
 //var nb = require('@/js/object')
 
 export default {
@@ -27,20 +27,39 @@ export default {
     AppLogo
   },
 	asyncData(){
-		console.log(nb)
-		nb.head("application", "service", "subservice");
-		console.log(nb.header.application);
-		console.log(nb);
-		var js = JSON.stringify(nb);
+//		console.log(nb)
+//		nb.head("application", "service", "subservice");
+//		console.log(nb.header.application);
+//		console.log(nb);
+//		var js = JSON.stringify(nb);
+//		console.log(js);
+		
+		var m = new Message("application", "service", "subservice", "msg");
+		console.log("asyncData index = " + m);
+//		console.log(m.toString());
+		var h = new Header("application", "service", "subservice");
+		console.log(h.application);
+		console.log(h.service);
+		console.log(h.subservice);
+		console.log("status = " + m.getStatus())
+		
+		m.setStatus(0, "hello");
+		console.log("data = " + m.getData());
+		if(m.getData() == null){
+			console.log("data no defined ");
+		}
+		m.addData("hello");
+		m.addData("world");
+		console.log("data = " + m.getData());
+		var js = JSON.stringify(m);
 		console.log(js);
-//		var m = new message("application", "service", "subservice", "msg");
-//		console.log("asyncData index = " + m);
-////		console.log(m.toString());
-//		var h = new header("application", "service", "subservice");
-//		console.log(h.application);
-//		console.log(h.service);
-//		console.log(h.subservice);
-//		console.log(h)
+		
+		var j = '{"header":{"application":"application","service":"service","subservice":"subservice"},"msg":"msg","status":{"code":0,"msg":"hello"}}';
+		var msg = JSON.parse(j);
+		console.log(msg);
+		
+		var r = new Response(j);
+		console.log(r.getApplication())
 		
 	}
   

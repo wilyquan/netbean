@@ -153,9 +153,31 @@
 		methods: {
 			async login(){
 				console.log("------login----------")
-				auth.login(this.formUsername, this.formPassword);
-				this.$store.commit('SET_TOKEN', 'token');
-				this.$router.push('/admin');
+				var _this = this;
+				var ret = await auth.login(this.formUsername, this.formPassword, function handler(isOK, msg){
+//					debugger;
+					if (isOK) {
+						_this.$store.commit('SET_TOKEN', 'token');
+						_this.$router.push('/admin');
+					}else{
+						_this.formError = msg;
+					}
+					
+				});
+//				debugger;
+//				console.log("====" + ret);
+//				if (ret != null){
+//					if (ret.code){
+//						this.$store.commit('SET_TOKEN', 'token');
+//						this.$router.push('/admin');
+//					}else{
+//						this.formError = ret.msg;
+//					}
+//				}
+				
+				
+//				this.$store.commit('SET_TOKEN', 'token');
+//				this.$router.push('/admin');
 			},
 			async logout(){
 				auth.logout();

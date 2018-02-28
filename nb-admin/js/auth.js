@@ -4,45 +4,62 @@ const kSessionKey = 'NETBEAN-ADMIN-USER-KEY';
 
 import * as nb from '@/js/message';
 import http from '@/js/http'
-
-
+////导入AES加密模块
+//import {AES} from 'crypto-js'
+////导入SHA256加密模块
+//import {SHA256} from 'crypto-js'
 
 export default {
-  login (username, pwd) {
-  	var token = sessionStorage.kSessionKey;
-  	//如果没有登陆
-  	if (token == null){
-  		console.log(username);
-  		console.log(pwd);
-		var userLogin = new nb.Message(nb.APPLICATION, nb.SERVICE_SYS, nb.SUBSERVICE_LOGIN);
-		userLogin.setData({username : username, password : pwd});
-		http.post(userLogin.toJSONString());
-//		console.log(userLogin.toJSONString());
-//		const { data } = axios.post('http://127.0.0.1:8080/iot-admin/p/api', userLogin.toJSONString(), headers: {
-//          'Content-Type': 'application/x-www-form-urlencoded',
-//    })
-  		
-  		var token = Math.random().toString(36).substring(7);
-  		sessionStorage.kSessionKey = token;
-  	}
-  	
-  	return token;
-  },
+	async login(username, pwd, handler) {
 
-  getToken () {
-    return sessionStorage.token
-  },
+		var code = false;
+		var msg = "ok";
+		var userInfo = sessionStorage.userInfo;
+		console.log('login(username, pwd)');
+		//如果没有登陆
+		if(userInfo == null) {
+			//		console.log(username);
+			//		console.log(pwd);
+			var userLogin = new nb.Message(nb.APPLICATION, nb.SERVICE_SYS, nb.SUBSERVICE_LOGIN);
+			userLogin.setData({
+				username: username,
+				password: pwd
+			});
+			//		console.log(userLogin.toJSONString());
 
-  logout () {
-    delete sessionStorage.kSessionKey;
-  },
+			//登陆成功后，将用户信息保存到缓存中
+			await userLogin.request(function h(isOK, statusMsg, response) {
+//				debugger;
+//				console.log("message response ...");
+//				console.log(isOK);
+//				console.log(statusMsg);
+//				console.log(response);
+				if(isOK) {
+					var userInfo = response.getData();
+					sessionStorage.userInfo = userInfo;
+				}
+				handler(isOK, statusMsg);
 
-  //是否登陆过
-  loggedIn () {
-    return !!sessionStorage.kSessionKey;
-  },
+			});
+		}else{
+			handler(true, msg);
+		}
+	},
 
-  onChange () {}
+	getToken() {
+		return sessionStorage.userInfo
+	},
+
+	logout() {
+		delete sessionStorage.userInfo;
+	},
+
+	//是否登陆过
+	loggedIn() {
+		return !!sessionStorage.userInfo;
+	},
+
+	onChange() {}
 }
 
 //function pretendRequest (email, pass, cb) {

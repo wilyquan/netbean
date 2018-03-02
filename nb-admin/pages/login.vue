@@ -146,8 +146,8 @@
 		data() {
 			return {
 				formError: null,
-				formUsername: '',
-				formPassword: ''
+				formUsername: 'root',
+				formPassword: 'admin'
 			};
 		},
 		methods: {
@@ -155,7 +155,7 @@
 				console.log("------login----------")
 				var _this = this;
 				var ret = await auth.login(this.formUsername, this.formPassword, function handler(isOK, msg){
-//					debugger;
+					debugger;
 					if (isOK) {
 						_this.$store.commit('SET_TOKEN', 'token');
 						_this.$router.push('/admin');

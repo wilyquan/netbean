@@ -10,6 +10,7 @@ export const sFail = 1;
 export const APPLICATION = "LV90KKJKNBYTADEB004589UIBIOMJU76";
 export const SERVICE_SYS = "sys";
 export const SUBSERVICE_LOGIN = "login";
+export const SUBSERVICE_MENUS = "menus";
 
 export const errors = new Map([
 	[102, '用户名或密码不存在'],
@@ -196,7 +197,7 @@ class Message extends Object {
 			}
 		} else {
 			console.log("network error")
-			msg = 'network error';
+			msg = '网络异常！';
 		}
 
 		if(h != null) {

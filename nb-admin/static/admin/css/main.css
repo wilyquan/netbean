@@ -42,7 +42,7 @@ padding-bottom: 9999px;}
 /*.cc-menu .selected a, .cc-menu .selected a:hover{color:#ffffff;background:#44b549;color:#fff;}*/
 
 .cc-menu .ico-new{margin-left:6px;}
-.cc-menu .type-ico{display:inline-block;width:20px;height:20px;margin:-3px 8px 0 0;vertical-align:middle;background:url(/img/common/ico_menu.png) no-repeat;}
+.cc-menu .type-ico{display:inline-block;width:20px;height:20px;margin:-3px 8px 0 0;vertical-align:middle;background:url(/admin/img/common/ico_menu.png) no-repeat;}
 .cc-menu .ico-account{background-position:0 0;}
 .cc-menu .ico-trade{background-position:0 -20px;}
 .cc-menu .ico-settle{background-position:0 -40px;}

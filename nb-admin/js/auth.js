@@ -10,6 +10,7 @@ import http from '@/js/http'
 //import {SHA256} from 'crypto-js'
 
 export default {
+	 
 	async login(username, pwd, handler) {
 
 		var code = false;
@@ -35,8 +36,10 @@ export default {
 //				console.log(statusMsg);
 //				console.log(response);
 				if(isOK) {
-					var userInfo = response.getData();
-					sessionStorage.userInfo = userInfo;
+					var userInfo = response.getData()[0];
+					sessionStorage.userInfo = JSON.stringify(userInfo);
+					sessionStorage.userId = userInfo.userId;
+					
 				}
 				handler(isOK, statusMsg);
 
@@ -46,6 +49,17 @@ export default {
 		}
 	},
 
+	getUserInfo(){
+		if (sessionStorage.userInfo != null){
+			return JSON.parse(sessionStorage.userInfo);
+		}
+		return null;
+	},
+	
+	getUserId(){
+		return sessionStorage.userId;
+	},
+	
 	getToken() {
 		return sessionStorage.userInfo
 	},
